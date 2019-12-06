@@ -10,3 +10,5 @@ const PlayerList = props => {
         </div>
     )
 }
+
+export default PlayerList;
