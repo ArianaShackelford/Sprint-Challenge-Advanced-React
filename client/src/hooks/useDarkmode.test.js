@@ -1,11 +1,11 @@
 
-import {getByText, getByTestId, fireEvent} from '@testing-library/dom';
+// import {getByText, fireEvent} from '@testing-library/dom';
 
 test('is dark mode working', () => {
     const darkmodeBtn = getByText('Dark Mode');
-    const darkModeOn = getByTestId(button, 'toggle toggled');
+    const darkModeOn = getByText('Dark mode on!')
 
     fireEvent.cleck(darkmodeBtn);
 
-    expect(darkModeOn).toBeTruthy();
+    expect(darkModeOn).hasTextContent();
 })
